@@ -8,7 +8,7 @@ import CakeStats from 'views/Home/components/CakeStats'
 import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
 import EarnAPRCard from 'views/Home/components/EarnAPRCard'
 import EarnAssetCard from 'views/Home/components/EarnAssetCard'
-import PredictionPromotionCard from 'views/Home/components/PredictionPromotionCard'
+import Twittercard from 'views/Home/components/Twittercard'
 import LotteryPromotionCard from 'views/Home/components/LotteryPromotionCard'
 import LotteryBanner from 'views/Home/components/LotteryBanner'
 import useFetchLotteryForPromos from 'views/Home/hooks/useFetchLotteryForPromos'
@@ -96,14 +96,14 @@ const Home: React.FC = () => {
       <Page>
         <Hero>
           <Heading as="h1" scale="xl" mb="24px" color="secondary">
-            {t('PancakeSwap')}
+            {t('Amaterasu')}
           </Heading>
           <Text>{t('The #1 AMM and yield farm on Binance Smart Chain.')}</Text>
         </Hero>
         <div>
           <Cards>
             <FarmStakingCard />
-            <PredictionPromotionCard />
+            <Twittercard />
           </Cards>
           <CTACards>
             <EarnAPRCard />
