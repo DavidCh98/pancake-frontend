@@ -1,7 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+/node_modules/*
+!@pancakeswap/
+/node_modules/@pancakeswap/sdk
+/node_modules/@pancakeswap/eslint-config-pancake
+/node_modules/@pancakeswap/uikit/package.json
+/node_modules/@pancakeswap/uikit/README.md
+/node_modules/@pancakeswap/uikit/dist/components
+/node_modules/@pancakeswap/uikit/dist/hooks
+/node_modules/@pancakeswap/uikit/dist/util
+/node_modules/@pancakeswap/uikit/dist/widgets
 /.pnp
 .pnp.js
 

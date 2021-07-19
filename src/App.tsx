@@ -30,8 +30,6 @@ import { RedirectPathToSwapOnly, RedirectToSwap } from './views/Swap/redirects'
 const Home = lazy(() => import('./views/Home'))
 const Farms = lazy(() => import('./views/Farms'))
 const FarmAuction = lazy(() => import('./views/FarmAuction'))
-const Lottery = lazy(() => import('./views/Lottery'))
-const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
 const Collectibles = lazy(() => import('./views/Collectibles'))
 const Teams = lazy(() => import('./views/Teams'))
@@ -39,9 +37,6 @@ const Team = lazy(() => import('./views/Teams/Team'))
 const Profile = lazy(() => import('./views/Profile'))
 const TradingCompetition = lazy(() => import('./views/TradingCompetition'))
 const Predictions = lazy(() => import('./views/Predictions'))
-const Voting = lazy(() => import('./views/Voting'))
-const Proposal = lazy(() => import('./views/Voting/Proposal'))
-const CreateProposal = lazy(() => import('./views/Voting/CreateProposal'))
 const AddLiquidity = lazy(() => import('./views/AddLiquidity'))
 const Liquidity = lazy(() => import('./views/Pool'))
 const PoolFinder = lazy(() => import('./views/PoolFinder'))
@@ -78,12 +73,6 @@ const App: React.FC = () => {
             <Route path="/pools">
               <Pools />
             </Route>
-            <Route path="/lottery">
-              <Lottery />
-            </Route>
-            <Route path="/ifo">
-              <Ifos />
-            </Route>
             <Route path="/collectibles">
               <Collectibles />
             </Route>
@@ -101,15 +90,6 @@ const App: React.FC = () => {
             </Route>
             <Route path="/prediction">
               <Predictions />
-            </Route>
-            <Route exact path="/voting">
-              <Voting />
-            </Route>
-            <Route exact path="/voting/proposal/create">
-              <CreateProposal />
-            </Route>
-            <Route path="/voting/proposal/:id">
-              <Proposal />
             </Route>
 
             {/* Using this format because these components use routes injected props. We need to rework them with hooks */}
